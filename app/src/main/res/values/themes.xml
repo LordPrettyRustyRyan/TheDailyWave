@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TheDailyWave" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary" type="color">@color/primaryPalette</item>
+        <item name="colorPrimaryVariant" type="color">@color/primaryPalette</item>
+        <item name="colorOnPrimary" type="color">@color/white</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary" type="color">@color/secondaryPalette</item>
+        <item name="colorSecondaryVariant" type="color">@color/secondaryPalette</item>
+        <item name="colorOnSecondary" type="color">@color/black</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" type="color">@color/primaryPalette</item>        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.TheDailyWave" parent="Base.Theme.TheDailyWave" />
+</resources>

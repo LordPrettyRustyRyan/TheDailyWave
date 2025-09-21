@@ -1,6 +1,7 @@
 # The Daily Wave
 
 A modern Android news app that fetches live headlines using the [NewsAPI](https://newsapi.org/), with our own Node/Express proxy server to handle API requests securely.
+<img width="3265" height="2000" alt="pic" src="https://github.com/user-attachments/assets/b41e5185-2b80-41ae-8358-9444cd3d9571" />
 
 ---
 
@@ -11,30 +12,6 @@ A modern Android news app that fetches live headlines using the [NewsAPI](https:
 - Loading state with **progress indicator**.
 - Works with a **custom Node.js/Express proxy server** (for secure API key usage).
 - Custom app icon & modern UI.
-
----
-
-## Project Structure
-
-TheDailyWave/
-│
-├── newsapi-proxy/ # Node.js backend
-│ ├── server.js
-│ ├── package.json
-│ └── .env
-│
-├── app/ # Android app
-│ ├── java/com/example/thedailywave/
-│ │ ├── MainActivity.java
-│ │ ├── NewsFullActivity.java
-│ │ ├── NewsRecyclerAdapter.java
-│ │ ├── Article.java
-│ │ └── ...
-│ ├── res/layout/
-│ │ ├── activity_main.xml
-│ │ ├── activity_news_full.xml
-│ │ └── ...
-│ └── AndroidManifest.xml
 
 ---
 
@@ -88,6 +65,14 @@ HttpUrl.Builder urlBuilder = HttpUrl.parse("http://10.0.2.2:5000/news").newBuild
 - CLEARTEXT not permitted → add android:usesCleartextTraffic="true" in AndroidManifest.xml for local dev.
 - Category buttons not working → ensure btn.setOnClickListener(this) is set for all buttons, and category text is converted to lowercase.
 - Real device can’t fetch news → change URL from 10.0.2.2 → your PC’s local IP or deploy server online.
+
+## Key Features
+
+- RecyclerView API integration for smooth news list display
+- Interactive buttons for easy news category filtering
+- News API connectivity using NewsApiClient library
+- Real-time news fetching and dynamic search functionality
+- Elegant loading progress indicator for enhanced UX
 
 ## Roadmap
 
